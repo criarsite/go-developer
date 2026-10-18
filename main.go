@@ -988,6 +988,68 @@ func main() {
 	// é um conjunto de regras que atribuem uma prorpriedade de tipo para as varias construcoes, tais como variaveis,, expressoes, funcoes, que um programa de computador e composto
 
 	//Interfaces e Exceções
-	//Interfaces vai definir um comportamento de um tipo, go nao possui exceções
+
+	var temperatura = Temperatura()
+	fmt.Println(temperatura)
+
+	/*Formatação
+
+		%d → inteiro (decimal)
+		%f e %g → números flutuantes
+		%s → texto (string)
+		%t → verdadeiro ou falso (true/false)
+		%T → tipo da variável
+		%v → valor genérico
+		%q → valor entre aspas
+	    %.2f → Números flutuantes com 2 casas decimais
+		%p  → Endereço de memória de um ponteiro
+	*/
+
+	//Conversao de tipos
+
+	var inteiro = 10
+	var texto = "texto"
+
+	var convertido float64 = float64(inteiro)
+	fmt.Printf("valor de inteirot = %d : texto = %s ", inteiro, texto)
+	fmt.Println(convertido)
+	fmt.Printf("tipo da variavel %T", convertido)
+
+	//Descobrindo o tipo de uma variavel %T
+
+	//Pacote FMT format
+	/*
+
+			Função	Finalidade	Mostra no ecrã?
+		fmt.Print()	Apresenta valores sem quebra de linha automática.
+		fmt.Println()	Apresenta valores com quebra de linha.
+		fmt.Printf()	Apresenta valores formatados.
+
+		fmt.Scan()	Lê valores introduzidos pelo utilizador.
+		fmt.Scanln()	Lê valores até ao fim da linha.
+		fmt.Scanf()	Lê dados utilizando um formato especificado.
+
+		fmt.Sprint()	Converte e combina valores em texto.
+		fmt.Sprintln()	Combina valores em texto, acrescentando uma quebra de linha.
+		fmt.Sprintf()	Cria uma string formatada.
+
+		fmt.Fprint()	Escreve num destino específico.
+		fmt.Fprintf()	Escreve texto formatado num destino específico.
+		fmt.Fprintln()	Escreve num destino específico com quebra de linha.
+	*/
+
+}
+
+// palavra reservada + nome + tipo recebe valor
+const ebulicaoF float64 = 212.0
+
+func Temperatura() float64 {
+	fmt.Println("Temperatura em Celsius:")
+	var temperaturaF float64 = ebulicaoF
+
+	var tempC float64 = (temperaturaF - 32) * 5 / 9 //Converte F para C
+	return tempC
+	//fmt.Println("a temperatura de ebulicao da agua em F =", temperaturaF)
+	//fmt.Println("a temperatura de ebulicao da agua em C =", tempC)
 
 }

@@ -2,11 +2,20 @@ package main
 
 import (
 	"fmt"
+	"modulo/projetos"
 )
 
 var escopoGlobal = "Variavel de escopo global"
 
 func main() {
+
+	//fundamentos()
+
+	var temperaturaDeEbulicacao = projetos.Conversor()
+	fmt.Println(temperaturaDeEbulicacao)
+}
+
+func fundamentos() {
 	fmt.Println("Yauh Seja Louvado")
 
 	//tipos numericos com tamanhos definidos

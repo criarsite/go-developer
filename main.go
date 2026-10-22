@@ -1,20 +1,16 @@
 package main
 
 import (
-	"fmt"
-	_ "modulo/fundamentos"
-
-	"modulo/estruturadecontrole"
+	"modulo/fundamentos"
 	"modulo/projetos"
 )
 
 func main() {
+	projetos.Alternar()
+	fundamentos.Fundamentos()
 
-	//fundamentos.Fundamentos()
+	// var temperaturaDeEbulicacao = projetos.Conversor()
+	// fmt.Println(temperaturaDeEbulicacao)
 
-	var temperaturaDeEbulicacao = projetos.Conversor()
-	fmt.Println(temperaturaDeEbulicacao)
-
-	estruturadecontrole.Estruturas()
-
+	// estruturadecontrole.Estruturas()
 }

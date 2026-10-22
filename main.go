@@ -2,14 +2,19 @@ package main
 
 import (
 	"fmt"
-	//	"modulo/fundamentos"
+	_ "modulo/fundamentos"
+
+	"modulo/estruturadecontrole"
 	"modulo/projetos"
 )
 
 func main() {
 
+	//fundamentos.Fundamentos()
+
 	var temperaturaDeEbulicacao = projetos.Conversor()
 	fmt.Println(temperaturaDeEbulicacao)
 
-	//fundamentos.Fundamentos()
+	estruturadecontrole.Estruturas()
+
 }

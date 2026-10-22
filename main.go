@@ -8,9 +8,4 @@ import (
 func main() {
 	projetos.Alternar()
 	fundamentos.Fundamentos()
-
-	// var temperaturaDeEbulicacao = projetos.Conversor()
-	// fmt.Println(temperaturaDeEbulicacao)
-
-	// estruturadecontrole.Estruturas()
 }
